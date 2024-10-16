@@ -1,0 +1,38 @@
+/* src/index.css */
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
+:root {
+  --gradient: linear-gradient(75deg,#bcfd8e,  #7cf796, #7cf796, #7ba1ff, #5b8afe );
+
+}
+
+*{
+  border:1px solid white;
+}
+
+body{
+  font-family: "Acme", sans-serif;
+  font-weight:200;
+  font-style: normal;
+  
+}
+
+// animating gradient
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left};
+}
+
+.my-name-section{
+  background-size: 300%;
+  background-image:linear-gradient(to top, black, 20%, #0000007a, 40%,  #00000067, 80%,transparent), var(--gradient);
+  animation: bg-animation 100s infinite;
+}
+
+.about-section{
+  background-color: black;
+}
