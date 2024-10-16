@@ -4,19 +4,22 @@
 @tailwind base;
 
 :root {
-  --gradient: linear-gradient(75deg,#bcfd8e,  #7cf796, #7cf796, #7ba1ff, #5b8afe );
-
+  --gradient-1: linear-gradient(290deg, hsla(290, 93%, 16%, 1) 30%, hsla(279, 88%, 61%, 1) 80%, rgb(198, 91, 255) 100%);
+  --color-1:#ffffff;
+  // --gradient-2: linear-gradient(61deg, hsla(290, 93%, 16%, 1) 30%, hsla(279, 88%, 61%, 1) 80%, rgb(198, 91, 255) 100%);
 }
 
 // *{
-//   border:1px solid white;
+//   border:1px solid black;
 // }
 
 body{
-  font-family: "Acme", sans-serif;
+  font-family: "Alatsi";
   font-weight:200;
   font-style: normal;
-  
+  background-size: 300%;
+  animation: bg-animation 100s infinite;
+  background-image: var(--gradient-1);
 }
 
 // animating gradient
@@ -25,14 +28,4 @@ body{
   0% {background-position: left}
   50% {background-position: right}
   100% {background-position: left};
-}
-
-.my-name-section{
-  background-size: 300%;
-  background-image:linear-gradient(to top, black, 20%, #0000007a, 40%,  #00000067, 80%,transparent), var(--gradient);
-  animation: bg-animation 100s infinite;
-}
-
-.about-section{
-  background-color: black;
 }

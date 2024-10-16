@@ -7,16 +7,18 @@ function App() {
   return (
     <>
       <header>
-        <section className="my-name-section min-h-[96vh]  flex flex-col justify-center items-center">
-          <div className="name-container p-5">
-            <div><span className="text-3xl bg-white rounded-lg p-5">Hi! My name is</span></div>
+        <section className="my-name-section min-h-lvh  flex flex-col justify-center items-center">
+
+          <div className="name-container p-5 text-[--color-1]">
+            <div><span className="text-3xl">Hi! My name is</span></div>
             <div><h1 className='text-7xl sm:text-9xl'>Rashmi Tindwani</h1></div>
           </div>
         </section>
       </header>
 
       <main>
-        <About></About>
+        
+          <About></About>
       </main>
     </>
   )
