@@ -1,13 +1,15 @@
 
+import FadeInSection from './FadeInSection.jsx';
 
 
 function About(){
     return (
-        <section className="about-section p-4 min-h-[100vh] flex flex-col justify-center items-center">
+        <section className="about-section p-4 min-h-[100vh] flex flex-col justify-center items-center" id="about-section">
+            <FadeInSection>
                 <div className="about-container flex flex-col items-center gap-y-20 text-[--color-1]">
                     <div className="sm:text-5xl text-3xl">
                         <h1>
-                            <span className="rounded-lg p-4 font-bold">ABOUT</span> ME
+                            <span className="rounded-lg p-4 font-bold text-black bg-white">ABOUT</span> ME
                         </h1>
                     </div>
                     <div>
@@ -16,6 +18,7 @@ function About(){
                         </p>
                     </div>
                 </div>
+            </FadeInSection>
         </section>
     )
 }
