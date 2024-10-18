@@ -2,11 +2,68 @@
 @tailwind components;
 @tailwind base;
 
-.navbar-section{
-    background-color: rgba(74, 74, 74, 0.243);
-    // filter:blur(5px);
+
+.navbar-list{
+    background-color: hsla(0, 0%, 0%, 0.1);
+    backdrop-filter: blur(1.5rem);
 }
 
 
+.logo{
+    margin:2rem;
+    z-index:1000;
+}
 
+
+@media (max-width: 40em){
+    .navbar-list{
+        position:fixed;
+
+    }
+
+    .navbar-list{
+        
+        position: fixed; 
+        left:0;    
+        inset : 0 30% 0 0;
+        gap:2em;
+        flex-direction: column;  
+        padding: min(30vh, 10rem) 2em;
+        z-index:100;
+        transform: translateX(-200%);
+        transition: transform 500ms ease-in-out
+    }
+
+    .nav-toggle-button{
+        position: absolute;
+        z-index:1000;
+        display:block;
+        background-repeat: no-repeat;
+    }
+
+    
+}
+
+@media (min-width: 40em) and (max-width: 69em){
+    .navbar-section a > [aria-hidden = "true"]{
+        display:none;
+    }
+}
+ 
+// @media (min-width: 40em){
+//     .navbar-section{
+//         position: sticky;
+//         top: 0.5rem;
+//     }
+// }
+
+.navbar-list[data-visible="true"]{
+    transform: translateX(0%);
+    
+}
+
+.navbar-section a > [aria-hidden = "true"]{
+    margin-inline-end : 0.75em;
+    font-weight:bold; 
+}
 
