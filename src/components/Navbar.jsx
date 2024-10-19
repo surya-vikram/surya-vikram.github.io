@@ -10,7 +10,6 @@ function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
 
     function navTogglefunction(){
-        console.log(navList.current)
         const visibility = navList.current.getAttribute('data-visible')
         
 

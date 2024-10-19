@@ -5,7 +5,7 @@
 
 .navbar-list{
     background-color: hsla(0, 0%, 0%, 0.1);
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(0.5rem);
 }
 
 
@@ -13,6 +13,7 @@
     margin:2rem;
     z-index:1000;
 }
+
 
 
 @media (max-width: 40em){
@@ -50,12 +51,6 @@
     }
 }
  
-// @media (min-width: 40em){
-//     .navbar-section{
-//         position: sticky;
-//         top: 0.5rem;
-//     }
-// }
 
 .navbar-list[data-visible="true"]{
     transform: translateX(0%);
