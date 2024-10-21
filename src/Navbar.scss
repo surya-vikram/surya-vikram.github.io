@@ -3,15 +3,17 @@
 @tailwind base;
 
 
-.navbar-list{
-    background-color: hsla(0, 0%, 0%, 0.1);
-    backdrop-filter: blur(0.5rem);
-}
+
+
+// .navbar-list, .nav-toggle-button{
+//     background-color: hsla(0, 0%, 0%, 0.1);
+//     backdrop-filter: blur(0.5rem);
+// }
 
 
 .logo{
     margin:2rem;
-    z-index:1000;
+    z-index:10000;
 }
 
 
@@ -24,19 +26,19 @@
 
     .navbar-list{
         
-        position: fixed; 
-        left:0;    
+        position: fixed;     
         inset : 0 30% 0 0;
-        gap:2em;
         flex-direction: column;  
         padding: min(30vh, 10rem) 2em;
         z-index:100;
         transform: translateX(-200%);
-        transition: transform 500ms ease-in-out
+        transition: transform 500ms ease-in-out;
+        background-color: hsla(0, 0%, 0%, 0.1);
+        backdrop-filter: blur(0.5rem);
     }
 
     .nav-toggle-button{
-        position: absolute;
+        position: fixed;
         z-index:1000;
         display:block;
         background-repeat: no-repeat;
@@ -48,6 +50,17 @@
 @media (min-width: 40em) and (max-width: 69em){
     .navbar-section a > [aria-hidden = "true"]{
         display:none;
+    }
+}
+
+@media (min-width: 40em){
+    .navbar-section{
+        background-color: hsla(0, 0%, 0%, 0.1);
+        backdrop-filter: blur(0.5rem);
+        position:fixed;
+        width:100%;
+        z-index:9999;
+        
     }
 }
  
