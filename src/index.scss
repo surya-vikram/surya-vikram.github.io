@@ -51,11 +51,10 @@ body {
   font-family: "Alatsi";
   font-weight: 200;
   font-style: normal;
-  background-size: 300%;
-  animation: bg-animation 10s infinite;
+  background-size: 300% 300%;
   background-color: purple;
-  background-image: var(--gradient-section-1), var(--gradient-body);
-  background-attachment: fixed;
+  animation: bg-animation 20s infinite;
+  background-image: var(--gradient-section-1), var(--gradient-body)
  
 }
 

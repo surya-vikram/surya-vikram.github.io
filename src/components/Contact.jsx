@@ -13,19 +13,19 @@ function Contact() {
         </h1>
         <FadeInSection>
           <ul className="contact-icons py-16 flex justify-evenly sm:gap-14 gap-5 text-5xl">
-            <li className="hover:-translate-y-4 transition-all duration-300 hover:shadow-xl rounded-full hover:shadow-gray-900">
+            <li className="hover:-translate-y-4 transition-all duration-500 hover:shadow-xl rounded-full hover:shadow-gray-900">
               <FaGithub></FaGithub>
             </li>
 
-            <li className="hover:-translate-y-4 transition-all duration-300 hover:shadow-xl rounded-full hover:shadow-gray-900">
+            <li className="hover:-translate-y-4 transition-all duration-500 hover:shadow-xl rounded-full hover:shadow-gray-900">
               <SiLeetcode></SiLeetcode>
             </li>
 
-            <li className="hover:-translate-y-4 transition-all duration-300 hover:shadow-xl rounded-full hover:shadow-gray-900">
+            <li className="hover:-translate-y-4 transition-all duration-500 hover:shadow-xl rounded-full hover:shadow-gray-900">
               <MdAlternateEmail></MdAlternateEmail>
             </li>
 
-            <li className="hover:-translate-y-4 transition-all duration-300 hover:shadow-xl rounded-md hover:shadow-gray-900">
+            <li className="hover:-translate-y-4 transition-all duration-500 hover:shadow-xl rounded-md hover:shadow-gray-900">
               <FaLinkedin></FaLinkedin>
             </li>
           </ul>
